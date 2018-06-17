@@ -109,12 +109,12 @@ function createHead(){
 
 /*
  * Function: scrollToMsg ©
- * Returns: scrolls chat column to last message sent or received
+ * Returns: show-hide chatbot panel
  * Author: Luca Crippa - luca.crippa88@gmail.com
  * Date: June 2018
- * Status: unstable
+ * Status: stable
  */
-function scrollToMsg(){
+function toggleChat(){
   $('body').on("click",".toggle-assistant",function(){
     $('#chat-form').fadeToggle("fast");
     $('#virtual-assistant').slideToggle("fast");

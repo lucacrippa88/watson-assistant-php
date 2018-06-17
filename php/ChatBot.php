@@ -9,14 +9,13 @@
   if(isset($_POST['message'])){
 
     // ID of Watson Assistant Workspace
-    $workspace_id = '';
+    $workspace_id = 'put-watson-assistant-workspace-id-here';
     // Release date of the API version in YYYY-MM-DD format
-    $release_date = '';
+    $release_date = 'put-watson-assistant-release-date-here';
     // Username of the service credentials
-    $username = '';
+    $username = 'put-watson-assistant-username-here';
     // Password of the service credentials
-    $password = '';
-
+    $password = 'put-watson-assistant-password-here';
 
     // Make a request message for Watson API in json
     $data['input']['text'] = $_POST['message'];
@@ -24,9 +23,9 @@
       $data['context'] = json_decode($_POST['context'], JSON_UNESCAPED_UNICODE); // Encode multibyte Unicode characters literally (default is to escape as \uXXXX)
     }
     $data['alternate_intents'] = false;
+
+    // Encode json data
     $json = json_encode($data, JSON_UNESCAPED_UNICODE);
-
-
 
     // Post the json to Watson Assistant API via cURL
     $ch = curl_init();
@@ -37,7 +36,6 @@
     curl_setopt($ch, CURLOPT_POST, true );
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
-
 
     // Prepare response, close curl and send response to front-end
     $result = trim( curl_exec( $ch ) );
