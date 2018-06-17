@@ -45,8 +45,8 @@ var api = "php/ChatBot.php"; // Backend api URl
       $('#virtual-assistant').animate({ scrollTop: $("#messages p").last().offset().top }, 'slow');
       // Upodate the conversation context
       context = JSON.stringify(JSON.parse(response).context);
-			// Call function to retrieve conversation context
-      getWAData(context);
+			// Call function to retrieve conversation context variables
+      getWatsonAssistantData(context);
     }
   }).fail(function () {
     // Failed (Watson Assistant error): display a error message
@@ -80,6 +80,20 @@ $(function(){
 })
 
 
+/*
+ * Function: getWatsonAssistantData ©
+ * Returns: retrieves context variables and uses them
+ * Author: Luca Crippa - luca.crippa88@gmail.com
+ * Date: June 2018
+ * Requires: nothing
+ * Status: to be customized
+ */
+function getWatsonAssistantData(context){
+
+  // Here you can use context variables as defined in Watson Assistant
+  // to perform actions when i.e. a variable gets a certain value
+
+}
 
 
 /*************************************
