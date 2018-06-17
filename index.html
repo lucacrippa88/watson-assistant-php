@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Carbon Design -->
+<link rel='stylesheet' type='text/css' href='css/carbon-components.min.css' />
+<script src='js/carbon-components.min.js'></script>
+<!-- Admin Zone functions -->
+<script src="js/chatbot.js"></script>
+
+<script>
+  createHead();
+</script>
+
+<body>
+
+  <!-- VIRTUAL ASSISTANT -->
+  <div class="bx--module bx--module--double" id="virtual-assistant-container">
+      <div class="bx--module__content" id="virtual-assistant">
+        <p>
+          <div id="messages"></div><br><br><br><br><br><br>
+          <form id="chat-form">
+            <input id="input-ask" type="text" name="message" value="" placeholder="Chiedimi qualcosa...">
+            <button type="submit" class="bx--btn bx--btn--secondary" id="chat-button"><i class="material-icons">keyboard_return</i></button><br><br>
+          </form>
+        </p>
+      </div>
+  </div>
+  <script>
+scrollToMsg();
+  </script>
+<!-- VIRTUAL ASSISTANT -->
+
+
+  <footer class="main-footer">
+  <i class="material-icons toggle-assistant">forum</i>
+  </footer>
+
+
+</body>
+
+</html>
