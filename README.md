@@ -20,6 +20,11 @@ In order to use this code, it's necessary to have:
 3. Edit CSS to fit in your web application's graphics
 
 
+## Outcome
+
+Here some screenshots of the outcome, in both desktop and mobile screens.
+
+
 ## Tutorials
 
 Please find tutorials on how to train Watson Assistant here: link to come (Italian, but with English interface)
