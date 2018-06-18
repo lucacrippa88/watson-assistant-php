@@ -18,6 +18,8 @@ In order to use this code, it's necessary to have:
 1. Download or fork code
 2. Edit php/ChatBot.php file with Watson Assistant credentials (username & password), release date of api, Workspace ID of the selected Virtual Assistant
 3. Edit CSS to fit in your web application's graphics
+4. Edit getWatsonAssistantData() in js/chatbot.js with context variable names to be checked in order to perform actions
+5. Edit useWatsonAssistantData() in js/chatbot.js with personal code to perform actions
 
 
 ## Tutorials
