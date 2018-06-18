@@ -2,6 +2,7 @@
 /*
  * API: ChatBot ©
  * Features: sends and retrieves messages from / to Watson Assistant via cURL
+ * References: https://www.ibm.com/watson/developercloud/assistant/api/v1/
  * Author: Luca Crippa - luca.crippa88@gmail.com
  * Date: April 2018
  */
@@ -31,14 +32,14 @@
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_URL, 'https://gateway.watsonplatform.net/assistant/api/v1/workspaces/'.$workspace_id.'/message?version='.$release_date);
+    curl_setopt($ch, CURLOPT_URL, 'https://gateway.watsonplatform.net/assistant/api/v1/workspaces/'.$workspace_id.'/message?version='.$release_date); // Instructions here: https://www.ibm.com/watson/developercloud/assistant/api/v1/curl.html?curl#message
     curl_setopt($ch, CURLOPT_USERPWD, $username.":".$password);
     curl_setopt($ch, CURLOPT_POST, true );
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 
-    // Prepare response, close curl and send response to front-end
-    $result = trim( curl_exec( $ch ) );
+    // Prepare response, close cURL and send response to front-end
+    $result = trim(curl_exec($ch));
     curl_close($ch);
     echo json_encode($result, JSON_UNESCAPED_UNICODE);
   }
