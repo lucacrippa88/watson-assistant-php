@@ -93,6 +93,32 @@ function getWatsonAssistantData(context){
   // Here you can use context variables as defined in Watson Assistant
   // to perform actions when i.e. a variable gets a certain value
 
+  context = JSON.parse(context); // get context from chatbot
+  // console.log(context); // check context status
+
+  // Conditions: check context variables status to perform actions
+  if(context.put_variable_name_here == "put-variable-value-here"){
+
+      // Prepare response with data collected from chatbot context variables
+      var allcontent = [];
+      var context_data = {
+        "key1": context.var_name1,
+        "key2": context.var_name2,
+        "key3": context.var_name3,
+        // etc...
+      }
+      allcontent.push(context_data);
+
+      // console.log(allcontent); // check data status
+
+      var allcontent_string = JSON.stringify(allcontent);
+
+      // Function to properly use Watson Assistant collected data
+      useWatsonAssistantData(allcontent_string);
+
+  }
+
+
 }
 
 
