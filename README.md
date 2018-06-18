@@ -15,6 +15,8 @@ In order to use this code, it's necessary to have:
 
 ## How to use
 
+Integrate this code by following the following customization steps:
+
 1. Download or fork code
 2. Edit php/ChatBot.php file with Watson Assistant credentials (username & password), release date of api, Workspace ID of the selected Virtual Assistant
 3. Edit CSS to fit in your web application's graphics
