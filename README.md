@@ -44,6 +44,6 @@ This is not an official asset. It has been created by me and it's not intended f
 
 Here some screenshots of the outcome, in both desktop and mobile screens.
 ![Bottom assistant desktop](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant.PNG)
-![Bottom assistant desktop chat](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-open.PNG)
 ![Bottom assistant mobile](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile.PNG)
+![Bottom assistant desktop chat](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-open.PNG)
 ![Bottom assistant mobile chat](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile-open.PNG)
