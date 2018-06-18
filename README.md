@@ -1,4 +1,4 @@
-# Integrate a Watson Assistant in a PHP web application
+# Easily integrate a Watson Assistant in a PHP web application
 
 This project allows you to easily integrate a responsive banner at the bottom of web page with a button to a chat panel powered by IBM Watson.
 
@@ -22,7 +22,7 @@ In order to use this code, it's necessary to have:
 
 ## Tutorials
 
-Please find tutorials on how to train Watson Assistant here: link to come (Italian, but with English interface)
+Please find tutorials on how to train Watson Assistant here: link to come (Italian spoken, but with English interface)
 
 
 ## Notes
