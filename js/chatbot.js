@@ -29,10 +29,10 @@ var api = "php/ChatBot.php"; // Backend api URl
       message: message,
       context: context
     },
-    timeout: 5000 // Wait (ms) to check new message arrival from Watson Assistant
+    timeout: 10000 // Wait (ms) to check new message arrival from Watson Assistant
   }).done(function(response) {
     // Check the result
-    if(response.error) { // Timed-out (no answer from Watson Assistant): display error
+    if(response.error) { // Timed-out (no answer from Watson Assistant): display a error message to ask user to resend message
       $('#messages').append('<p>Non ho capito. Mi rimanderesti il tuo messaggio?</p>');
     } else { // Succeeded: display message
 			// Clear the input element
@@ -49,7 +49,7 @@ var api = "php/ChatBot.php"; // Backend api URl
       getWatsonAssistantData(context);
     }
   }).fail(function () {
-    // Failed (Watson Assistant error): display a error message
+    // Failed (Watson Assistant error): display a error message to ask user to resend message
     $('#messages').append('<p>Non ho capito. Mi rimanderesti il tuo messaggio?</p>');
   });
 
@@ -86,7 +86,7 @@ $(function(){
  * Author: Luca Crippa - luca.crippa88@gmail.com
  * Date: June 2018
  * Requires: nothing
- * Status: to be customized
+ * Status: stable - to be customized
  */
 function getWatsonAssistantData(context){
 
@@ -118,6 +118,26 @@ function getWatsonAssistantData(context){
 
   }
 
+}
+
+
+/*
+ * Function: useWatsonAssistantData ©
+ * Returns: uses data collected by Watson Assistant chatbot
+ * Author: Luca Crippa - luca.crippa88@gmail.com
+ * Date: June 2018
+ * Requires: getWatsonAssistantData © input
+ * Status: to be customized
+ */
+function useWatsonAssistantData(data){
+
+  // Here you can use context variables collected in getWatsonAssistantData ©
+  // to perform actions when i.e. write on DB, call IBM Cloud Functions,
+  // call other code, or anything else.
+
+  // To be customized
+  var data = JSON.parse(data); // get context from chatbot
+  // console.log(data);
 
 }
 
@@ -150,7 +170,7 @@ function createHead(){
 
 
 /*
- * Function: scrollToMsg ©
+ * Function: toggleChat ©
  * Returns: show-hide chatbot panel
  * Author: Luca Crippa - luca.crippa88@gmail.com
  * Date: June 2018
