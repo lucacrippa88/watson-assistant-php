@@ -3,7 +3,7 @@
 This project allows you to easily integrate a responsive banner at the bottom of web page with a button to a chat panel powered by IBM Watson.
 
 
-# Prerequisites
+## Prerequisites
 
 In order to use this code, it's necessary to have:
 
@@ -13,19 +13,19 @@ In order to use this code, it's necessary to have:
 4. A PHP application
 
 
-# How to use
+## How to use
 
 1. Download or fork code
 2. Edit php/ChatBot.php file with Watson Assistant credentials (username & password), release date of api, Workspace ID of the selected Virtual Assistant
 3. Edit CSS to fit in your web application's graphics
 
 
-# Tutorials
+## Tutorials
 
 Please find tutorials on how to train Watson Assistant here: link to come (Italian, but with English interface)
 
 
-# Notes
+## Notes
 
 This code uses an local hosted version of:
 
@@ -33,3 +33,8 @@ This code uses an local hosted version of:
 2. Material Design Lite: https://getmdl.io/
 
 You can also use your own graphic framework.
+
+
+## Disclaimer
+
+This is not an official asset. It has been created by me and it's not intended for professional use. However, it follows all guidelines you can find in https://console.bluemix.net/docs/services/conversation/ and in https://www.ibm.com/watson/developercloud/assistant/api/v1/.
