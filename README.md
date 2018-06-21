@@ -62,3 +62,8 @@ Here some screenshots of the outcome, in both desktop and mobile screens.
 ### Mobile layout
 ![Bottom assistant mobile](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile.PNG)
 ![Bottom assistant mobile chat](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile-open.PNG)
+
+
+## License
+
+This project uses the Apache License Version 2.0 software license. https://github.com/lucacrippa88/watson-assistant-php/blob/master/LICENSE
