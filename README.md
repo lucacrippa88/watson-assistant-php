@@ -29,11 +29,11 @@ Integrate this code by following the following customization steps:
 Please find tutorials on how to train Watson Assistant here: link to come (Italian spoken, but with English interface).
 
 0. Please refer to this Github repository to know how to train Watson Assistant: https://github.com/lucacrippa88/watson-assistant-training
-1. Introduzione all'integrazione con PHP
-2. Coding del backend in PHP
-3. Coding del frontend web
-4. Funzionalità: aiuto alla navigazione
-5. Funzionalità: salvataggio dati su MySQL
+1. Introduzione all'integrazione con PHP: https://www.youtube.com/watch?v=OmXN3bhX_Ww
+2. Coding del backend in PHP: https://www.youtube.com/watch?v=f2Rc4OnYbao
+3. Coding del frontend web: https://www.youtube.com/watch?v=CBSPNKs5SMU
+4. Funzionalità: aiuto alla navigazione UI: https://www.youtube.com/watch?v=9D1JpuXlx60&t=3s
+5. Funzionalità: salvataggio dati su MySQL: https://www.youtube.com/watch?v=OMKbOrRxiuc&t=4s
 
 
 ## Notes
