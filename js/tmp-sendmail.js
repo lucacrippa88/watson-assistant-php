@@ -1,4 +1,5 @@
 // Set subject as requested
+// Get subject from url
 var subject = getURLParameter("subject");
 $(document).ready(function() {
   if(subject != null) {
@@ -7,7 +8,7 @@ $(document).ready(function() {
 });
 
 
-
+// main sendmail function
 $("#submitmessage").click(function() {
 
   var data = {
