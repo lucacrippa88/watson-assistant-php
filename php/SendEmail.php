@@ -12,7 +12,7 @@
 	// $SiteSocial = "#...";
 	// $SiteAddress = "...";
 
-	$secret = "put-here-recaptcha-secret";
+	$secret = "put-here-recaptcha-secret"; // Please have a look here: https://www.google.com/recaptcha/intro/v3beta.html
 
 
 // -----------------------------------------------------------------------------
