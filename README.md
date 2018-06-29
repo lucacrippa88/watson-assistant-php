@@ -66,7 +66,7 @@ Here some screenshots of the outcome, in both desktop and mobile screens.
 ![Bottom assistant mobile chat](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile-open.PNG)
 
 
-## CSS
+### CSS
 
 Classes and ids to be used. Can be changed but it's needed to change the js/chatbot.js file.
 
