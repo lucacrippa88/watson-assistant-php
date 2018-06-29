@@ -54,12 +54,6 @@ This code uses an local hosted version of:
 You can also use your own graphic framework.
 
 
-## Disclaimer
-
-This is not an official asset. It has been created by me and it's not intended for professional use. However, it follows all guidelines you can find in https://console.bluemix.net/docs/services/conversation/ and in https://www.ibm.com/watson/developercloud/assistant/api/v1/.
-For Watson Services SLAs, please have a look here: https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-0038-09.
-
-
 ## Outcome
 
 Here some screenshots of the outcome, in both desktop and mobile screens.
@@ -70,6 +64,25 @@ Here some screenshots of the outcome, in both desktop and mobile screens.
 ### Mobile layout
 ![Bottom assistant mobile](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile.PNG)
 ![Bottom assistant mobile chat](https://github.com/lucacrippa88/watson-assistant-php/blob/master/screenshots/bottom-assistant-mobile-open.PNG)
+
+
+## CSS
+
+Classes and ids to be used. Can be changed but it's needed to change the js/chatbot.js file.
+
+#virtual-assistant-container
+#virtual-assistant
+#messages
+#chat-form
+#input-ask
+#chat-button
+.toggle-assistant
+
+
+## Disclaimer
+
+This is not an official asset. It has been created by me and it's not intended for professional use. However, it follows all guidelines you can find in https://console.bluemix.net/docs/services/conversation/ and in https://www.ibm.com/watson/developercloud/assistant/api/v1/.
+For Watson Services SLAs, please have a look here: https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-0038-09.
 
 
 ## License
