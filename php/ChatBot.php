@@ -11,14 +11,14 @@
 
     // ID of Watson Assistant Workspace
     $workspace_id = 'put-watson-assistant-workspace-id-here';
-    // Release date of the API version in YYYY-MM-DD format
+    // Release date of the API version in YYYY-MM-DD format (*)
     $release_date = 'put-watson-assistant-release-date-here';
     // Username of the service credentials
     $username = 'put-watson-assistant-username-here';
     // Password of the service credentials
     $password = 'put-watson-assistant-password-here';
 
-    // Release date allows you to use an older version of the Watson Assistant API, to have compatibility cross releases
+    // (*) Release date allows you to use an older version of the Watson Assistant API, to have compatibility cross releases
 
     // Make a request message for Watson API in json
     $data['input']['text'] = $_POST['message'];
@@ -35,9 +35,9 @@
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_URL, 'https://gateway.watsonplatform.net/assistant/api/v1/workspaces/'.$workspace_id.'/message?version='.$release_date); // Instructions here: https://www.ibm.com/watson/developercloud/assistant/api/v1/curl.html?curl#message
-    curl_setopt($ch, CURLOPT_USERPWD, $username.":".$password);
+    curl_setopt($ch, CURLOPT_USERPWD, $username.":".$password); // Set cURL Watson Assistant credentials
     curl_setopt($ch, CURLOPT_POST, true );
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json')); // Set cURL headers
     curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 
     // Prepare response, close cURL and send response to front-end
