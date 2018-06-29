@@ -30,6 +30,7 @@ var api = "php/ChatBot.php"; // Backend api URl
       context: context
     },
     timeout: 10000 // Wait (ms) to check new message arrival from Watson Assistant
+                   // Can be used if a response is needed in a certain time
   }).done(function(response) {
     // Check the result
     if(response.error) { // Timed-out (no answer from Watson Assistant): display a error message to ask user to resend message
@@ -127,7 +128,7 @@ function getWatsonAssistantData(context){
  * Author: Luca Crippa - luca.crippa88@gmail.com
  * Date: June 2018
  * Requires: getWatsonAssistantData © input
- * Status: to be customized
+ * Status: to be fully customized
  */
 function useWatsonAssistantData(data){
 

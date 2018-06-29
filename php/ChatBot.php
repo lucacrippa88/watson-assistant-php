@@ -41,9 +41,9 @@
     curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 
     // Prepare response, close cURL and send response to front-end
-    $result = trim(curl_exec($ch));
-    curl_close($ch);
-    echo json_encode($result, JSON_UNESCAPED_UNICODE);
+    $result = trim(curl_exec($ch)); // Prepare
+    curl_close($ch); // Close
+    echo json_encode($result, JSON_UNESCAPED_UNICODE); // Send
   }
 
 ?>
