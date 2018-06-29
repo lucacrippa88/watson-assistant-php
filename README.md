@@ -34,7 +34,7 @@ The integration of a Chatbot in a PHP web app allows to easily:
 
 ## Tutorials
 
-Please find tutorials on how to train Watson Assistant here: link to come (Italian spoken, but with English interface).
+Please find my tutorials on how to train Watson Assistant here: link to come (Italian spoken, but with English interface).
 
 0. Please refer to this Github repository to know how to train Watson Assistant: https://github.com/lucacrippa88/watson-assistant-training
 1. Introduzione all'integrazione con PHP: https://www.youtube.com/watch?v=OmXN3bhX_Ww
@@ -83,6 +83,7 @@ Classes and ids to be used. Can be changed but it's needed to change the js/chat
 
 This is not an official asset. It has been created by me and it's not intended for professional use. However, it follows all guidelines you can find in https://console.bluemix.net/docs/services/conversation/ and in https://www.ibm.com/watson/developercloud/assistant/api/v1/.
 For Watson Services SLAs, please have a look here: https://www-03.ibm.com/software/sla/sladb.nsf/sla/bm-0038-09.
+Video tutorial linked are not official assets.
 
 
 ## License
