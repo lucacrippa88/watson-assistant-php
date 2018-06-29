@@ -18,6 +18,8 @@
     // Password of the service credentials
     $password = 'put-watson-assistant-password-here';
 
+    // Release date allows you to use an older version of the Watson Assistant API, to have compatibility cross releases
+
     // Make a request message for Watson API in json
     $data['input']['text'] = $_POST['message'];
     if(isset($_POST['context']) && $_POST['context']){
