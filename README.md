@@ -24,6 +24,14 @@ Integrate this code by following the following customization steps:
 5. Edit useWatsonAssistantData() in js/chatbot.js with personal code to perform actions
 
 
+## Features
+
+The integration of a Chatbot in a PHP web app allows to easily:
+1. Help users to navigate graphic user interface (GUI) by answering to common questions and giving advices
+2. Enables to retrieve data from user in order to perform actions triggered by context variables, such as writing on a DB
+3. Allows to create and send an email e.g. to the support team -> under development
+
+
 ## Tutorials
 
 Please find tutorials on how to train Watson Assistant here: link to come (Italian spoken, but with English interface).
