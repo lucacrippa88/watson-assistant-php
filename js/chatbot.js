@@ -139,6 +139,8 @@ function useWatsonAssistantData(data){
   var data = JSON.parse(data); // get context from chatbot
   // console.log(data);
 
+  // Use collected data to perform some actions!
+
 }
 
 
