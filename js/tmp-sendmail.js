@@ -1,5 +1,13 @@
+/*************************************
+ * Send email functions ©
+ * Author: Luca Crippa - luca.crippa88@gmail.com
+ * Requires: php/SendEmail.php, chatbot.js and others
+ * Status: currently unstable / out of service
+ *************************************/
+
 // Set subject as requested
 // Get subject from url
+// Currently out of service
 var subject = getURLParameter("subject");
 $(document).ready(function() {
   if(subject != null) {
@@ -8,7 +16,7 @@ $(document).ready(function() {
 });
 
 
-// main sendmail function
+// Main sendmail function
 $("#submitmessage").click(function() {
 
   var data = {
