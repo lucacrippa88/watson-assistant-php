@@ -9,7 +9,7 @@ In order to use this code, it's necessary to have:
 
 1. An IBM Cloud account. It's free of charge, no credit card required (only a valid email address)
 2. A Watson Assistant Lite Service (free of charge)
-3. A trained Watson Assistant Workspace
+3. A trained Watson Assistant Workspace -> you can start from this folder (italian): https://github.com/lucacrippa88/watson-assistant-php/tree/master/virtual-assistant-ui-mysql-php
 4. A PHP application
 
 
