@@ -42,6 +42,7 @@ Please find my tutorials on how to train Watson Assistant here: link to come (It
 3. Coding del frontend web: https://www.youtube.com/watch?v=CBSPNKs5SMU
 4. Funzionalità: aiuto alla navigazione UI: https://www.youtube.com/watch?v=9D1JpuXlx60&t=3s
 5. Funzionalità: salvataggio dati su MySQL: https://www.youtube.com/watch?v=OMKbOrRxiuc&t=4s
+6. - ... -> more to come!
 
 
 ## Notes
@@ -70,13 +71,13 @@ Here some screenshots of the outcome, in both desktop and mobile screens.
 
 Classes and ids to be used. Can be changed but it's needed to change the js/chatbot.js file.
 
-#virtual-assistant-container
-#virtual-assistant
-#messages
-#chat-form
-#input-ask
-#chat-button
-.toggle-assistant
+1. #virtual-assistant-container
+2. #virtual-assistant
+3. #messages
+4. #chat-form
+5. #input-ask
+6. #chat-button
+7. .toggle-assistant -> button to show/hide (toggle) the chat panel
 
 
 ## Disclaimer
