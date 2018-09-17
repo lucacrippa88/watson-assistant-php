@@ -47,71 +47,7 @@ function createHead(){
 
 
 
-/*
- * Function: fillKeys Â©
- * Returns: selezione automatica delle keyword per Admin Zone da config.json
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: July 2017
- */
-function fillKeys(result){
 
-	$('label[for="chips1"]').text(result.TextChip.chips1);
-
-	// $('.chips').material_chip();
-
-	$('#select1').change(function(){
-
-		var chipsdata = "";
-		var chipsdata = chipsdata+"[";
-
-		if($('#select1').val() == result.select1[0]){
-				$('.chips').material_chip();
-				for(var j in result.TextChip.keyword1){
-					chipsdata = chipsdata + '{"tag": "'+result.TextChip.keyword1[j]+'"},';
-				}
-				chipsdata = chipsdata.slice(0,-1);
-				chipsdata = chipsdata + "]";
-				chipsdatajson = $.parseJSON(chipsdata);
-				$('.chips-initial').material_chip({
-					data:chipsdatajson,
-				});
-		} else if($('#select1').val() == result.select1[1]){
-				$('.chips').material_chip();
-				for(var j in result.TextChip.keyword2){
-					chipsdata = chipsdata + '{"tag": "'+result.TextChip.keyword2[j]+'"},';
-				}
-				chipsdata = chipsdata.slice(0,-1);
-				chipsdata = chipsdata + "]";
-				chipsdatajson = $.parseJSON(chipsdata);
-				$('.chips-initial').material_chip({
-					data:chipsdatajson,
-				});
-		} else if($('#select1').val() == result.select1[2]){
-				$('.chips').material_chip();
-				for(var j in result.TextChip.keyword3){
-					chipsdata = chipsdata + '{"tag": "'+result.TextChip.keyword3[j]+'"},';
-				}
-				chipsdata = chipsdata.slice(0,-1);
-				chipsdata = chipsdata + "]";
-				chipsdatajson = $.parseJSON(chipsdata);
-				$('.chips-initial').material_chip({
-					data:chipsdatajson,
-				});
-		} else {
-				$('.chips').material_chip();
-				for(var j in result.TextChip.keyword4){
-					chipsdata = chipsdata + '{"tag": "'+result.TextChip.keyword4[j]+'"},';
-				}
-				chipsdata = chipsdata.slice(0,-1);
-				chipsdata = chipsdata + "]";
-				chipsdatajson = $.parseJSON(chipsdata);
-				$('.chips-initial').material_chip({
-					data:chipsdatajson,
-				});
-		}
-	});
-
-}
 
 
 /*
