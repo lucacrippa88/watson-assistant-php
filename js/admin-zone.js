@@ -50,78 +50,7 @@ function createHead(){
 
 
 
-/*
- * Function: fillTexts Â©
- * Returns: configurazione degli input per Admin Zone da config.json
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: July 2017
- */
-function fillTexts(result){
 
-	for (var j=1 in result.Textarea){
-		if(result.Textarea[j][0] != ""){
-			$('#'+j+'-img').attr("style", "display:block;");
-			$('#'+j).attr("style", "display:block;");
-			$('#'+j).attr("data-length", result.Textarea[j][1]);
-			$('label[for="'+j+'"]').attr("style", "display:block;");
-			$('label[for="'+j+'"]').text(result.Textarea[j][0]);
-		} else {
-			$('#'+j+'-img').attr("style", "display:none;");
-			$('#'+j).attr("style", "display:none;");
-			$('label[for="'+j+'"]').attr("style", "display:none;");
-		}
-	}
-
-	for (var j=1 in result.Text){
-		if(result.Text[j][0] != ""){
-			$('#'+j).attr("style", "display:block;");
-			$('#'+j).attr("data-length", result.Text[j][1]);
-			$('label[for="'+j+'"]').attr("style", "display:block;");
-			$('label[for="'+j+'"]').text(result.Text[j][0]);
-		} else {
-			$('#'+j).attr("style", "display:none;");
-			$('label[for="'+j+'"]').attr("style", "display:none;");
-			$('#'+j+'-img').attr("style", "display:none;");
-		}
-	}
-
-	for (var j=1 in result.Check){
-		if(result.Check[j][0] != ""){
-			$('#'+j).attr("style", "display:block;");
-			$('label[for="'+j+'"]').attr("style", "display:block;");
-			$('label[for="'+j+'"]').text(result.Check[j][0]);
-		} else {
-			$('#'+j).attr("style", "display:none;");
-			$('label[for="'+j+'"]').attr("style", "display:none;");
-		}
-	}
-
-}
-
-
-/*
- * Function: fillSwitches Â©
- * Returns: configurazione degli input switchabili per Admin Zone da config.json
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: July 2017
- */
-function fillSwitches(result){
-
- // $('label[for="text5-sw"]').text(result.Text.text5[0]);
- // $('#text5').hide();
- $('label[for="text6-sw"]').text(result.Text.text6[0]);
- $('#text6').hide();
- $('#text6-sw').change(function() {
-	 $('#text6').toggle();
-	 $('#text6').attr("placeholder", result.Text.text6[0]);
-	 $('#text6').attr("data-length", result.Text.text6[1]);
-	 $('#text6').toggleClass('form-unchecked');
-	 $('#text6').val('');
-	 $('#select3-div').toggle();
-	 $('#select3-div').toggleClass('form-unchecked');
- });
-
-}
 
 
 /*
