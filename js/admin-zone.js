@@ -43,23 +43,6 @@ function createHead(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*************************************
  * Watson Assistant functions Â©
  * Requires: nothing
@@ -296,63 +279,10 @@ function getAllData(id) {
 }
 
 
-/*
- * Function: findRecord Â©
- * Returns: searches for record in DB and returns "yes" if found
- * Requires: value to be searched, id of record to be excluded from the search
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: January 2018
- */
-function findRecord(search, id) {
-  var post_search = search;
-  var post_id = id;
-  var found;
-
-  var api = 'api/FindRecordDB.php';
-
-  $.ajax({
-    url: api,
-    type: 'POST',
-    data: {
-      s: post_search,
-      i: post_id
-    },
-    dataType: 'json',
-    async: false, // wait for response to check if value already exists in DB: need to be sync
-    success: function(result) {
-      found = result.Response.found;
-    }
-  });
-  return found;
-}
 
 
-/*
- * Function: checkRequired Â©
- * Returns: check if required fields are filled
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: January 2018
- */
-function checkRequired(postdata) {
-  var check_required;
-  if ((postdata.select1 == null) || (postdata.select2 == null) || (postdata.url == "")) { // Set required fields here
-    swal({
-      title: 'Attenzione',
-      html: 'Devi compilare tutti i campi richiesti (*).<br><br>',
-      customClass: 'dialog',
-      buttonsStyling: false,
-      confirmButtonClass: 'bx--btn bx--btn--sm bx--btn--primary',
-      confirmButtonText: 'Torna',
-      type: 'error'
-    }).then(function() {
-      check_required = "error";
-      return check_required;
-    })
-  } else {
-    check_required = "ok";
-    return check_required;
-  }
-}
+
+
 
 
 /*
