@@ -41,108 +41,10 @@ function createHead(){
 	$('head').append(headfull);
 }
 
-/*
- * Function: updateDatetime Â©
- * Returns: creazione iterativa di datepicker e timepicker accoppiati a seconda del numero di datetimes presenti nel DB
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: January 2018
- */
-function updateDatetime(date, time, i){
-	 var row = 1 + +i;
-	 if (row == "1"){
-		 $("#moltiplicandum"+row).find("input#event-date"+row).val(date);
-		 $("#moltiplicandum"+row).find("input#event-time"+row).val(time);
-	 } else {
-		 $("#moltiplicandum"+i).clone().prop('id', 'moltiplicandum'+(row)).appendTo("#event-dates"); // clono, rinomino e appendo
-		 $("#moltiplicandum"+row).find('input:text').val("");
-		 $("#moltiplicandum"+row).find("input#event-date"+i).attr("id","event-date"+row);
-				 $("#moltiplicandum"+row).find("input#event-date"+row).val(date);
-		 $("#moltiplicandum"+row).find("label#event-date-label"+i).attr("for","event-date"+row);
-		 $("#moltiplicandum"+row).find("label#event-date-label"+i).css("display", "none");
-		 $("#moltiplicandum"+row).find("input#event-time"+i).attr("id","event-time"+row);
-				 $("#moltiplicandum"+row).find("input#event-time"+row).val(time);
-		 $("#moltiplicandum"+row).find("label#event-time-label"+i).attr("for","event-time"+row);
-		 $("#moltiplicandum"+row).find("label#event-time-label"+i).css("display", "none");
-	 }
-	 initDatetime();
-}
 
 
-/*
- * Function: addDatetime Â©
- * Returns: creazione iterativa di datepicker e timepicker accoppiati
- * Author: Luca Crippa - luca.crippa88@gmail.com
-* Date: June 2017
- */
-function addDatetime(){
-		 var TOTALROWSFILLED = 1;
-			var MAXROWS = 15;
-			$('#addicon-date').click(function(){
-				if(TOTALROWSFILLED < MAXROWS){
-						var $div = $('div[id^="moltiplicandum"]:last'); // seleziono l'ultimo moltiplicandum
-						var nextrow = parseInt( $div.prop("id").match(/\d+/g), 10 ) +1; // estraggo il numero identificativo e lo incremento
-						var currentrow = nextrow-1;
-							$("#moltiplicandum"+currentrow).clone().prop('id', 'moltiplicandum'+nextrow).appendTo("#event-dates"); // clono, rinomino e appendo
-							$("#moltiplicandum"+nextrow).find('input:text').val("");
-							$("#moltiplicandum"+nextrow).find("input#event-date"+currentrow).attr("id","event-date"+nextrow);
-							$("#moltiplicandum"+nextrow).find("label#event-date-label"+currentrow).attr("for","event-date"+nextrow);
-							$("#moltiplicandum"+nextrow).find("label#event-date-label"+currentrow).css("display", "none");
-							$("#moltiplicandum"+nextrow).find("input#event-time"+currentrow).attr("id","event-time"+nextrow);
-							$("#moltiplicandum"+nextrow).find("label#event-time-label"+currentrow).attr("for","event-time"+nextrow);
-							$("#moltiplicandum"+nextrow).find("label#event-time-label"+currentrow).css("display", "none");
-							// $("#moltiplicandum"+nextrow).find("svg#garbage"+currentrow).attr("id","garbage"+nextrow);
-						 // $("#garbage"+nextrow).click(function(){ removeDatetime(nextrow) }); // ELIMINA SEMPRE L'ULTIMO!!!
-						initDatetime();
-					} else {
-							swal({
-							title: "Attenzione",
-							html: "Hai raggiunto il numero massimo di date disponibili.<br><br>",
-							type: "warning",
-							showCloseButton: false,
-							showCancelButton: true,
-							showConfirmButton: false,
-							buttonsStyling: false,
-							customClass: 'modal-container',
-							cancelButtonClass: 'bx--btn bx--btn--primary',
-							cancelButtonText: 'Ok'
-							});
-					}
-					TOTALROWSFILLED++;
-			});
-
-}
 
 
-/*
- * Function: removeDatetime Â©
- * Returns: eliminazione iterativa di datepicker e timepicker accoppiati
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: January 2018
- */
-function removeDatetime(num){
-	// TBI (To Be Implemented)
-}
-
-
-/*
- * Function: fillSelect Â©
- * Returns: configurazione dei select per Admin Zone da config.json
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: July 2017
- */
-function fillSelect(selectId, selectKey){
-		if(selectKey != undefined){
-			for(var j in selectKey){
-				$(selectId).append($('<option>', {
-					value: selectKey[j],
-					text: selectKey[j]
-				}));
-			}
-		}
-		// else {
-		//   $(selectId).attr("display", "none");
-		// }
-}
 
 
 /*
