@@ -29,7 +29,8 @@ Integrate this code by following the following customization steps:
 The integration of a Chatbot in a PHP web app allows to easily:
 1. Help users to navigate graphic user interface (GUI) by answering to common questions and giving advices
 2. Enables to retrieve data from user in order to perform actions triggered by context variables, such as writing on a DB
-3. Allows to create and send an email e.g. to the support team -> under development
+3. Allows to create and send an email e.g. to the support team -> under development!
+4. Allows to create and send a web push notification -> under development!
 
 
 ## Tutorials
