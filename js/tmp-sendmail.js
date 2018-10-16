@@ -21,7 +21,7 @@ $("#submitmessage").click(function() {
 
   // NEED TO GET CONTEXT FROM WATSON ASSISTANT CHATBOT!
   // Values should be retrieved from context variables
-  // To be updated
+  // To be updated!
 
   var data = {
       UserSubject: $("#usersubject").val(),
