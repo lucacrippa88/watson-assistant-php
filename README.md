@@ -29,8 +29,8 @@ Integrate this code by following the following customization steps:
 The integration of a Chatbot in a PHP web app allows to easily:
 1. Help users to navigate graphic user interface (GUI) by answering to common questions and giving advices
 2. Enables to retrieve data from user in order to perform actions triggered by context variables, such as writing on a DB
-3. Allows to create and send an email e.g. to the support team -> under development!
-4. Allows to create and send a web push notification -> under development!
+3. Allows to create and send an email i.e. to the support team -> under development!
+4. Allows to create and send a web push notification -> under development! -> OneSignal required! https://onesignal.com/
 
 
 ## Tutorials
@@ -53,7 +53,7 @@ This code uses an local hosted version of:
 1. Carbon Design System: http://www.carbondesignsystem.com/
 2. Material Design Lite: https://getmdl.io/
 
-You can also use your own graphic framework, i.e. Material Design.
+You can also use your own graphic framework.
 
 
 ## Outcome
