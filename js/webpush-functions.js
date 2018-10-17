@@ -6,7 +6,7 @@
  */
 function sendPush(){
 
-	var api = 'api/SendPush.php';
+	var api = 'php/CreatePush.php';
 
 	var post_title = $("#text1").val();
   var post_text = $("#text2").val();
