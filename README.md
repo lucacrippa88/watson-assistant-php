@@ -53,7 +53,7 @@ This code uses an local hosted version of:
 1. Carbon Design System: http://www.carbondesignsystem.com/
 2. Material Design Lite: https://getmdl.io/
 
-You can also use your own graphic framework.
+You can also use your own graphic framework, i.e. Material Design.
 
 
 ## Outcome
