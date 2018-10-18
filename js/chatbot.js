@@ -143,10 +143,3 @@ function useWatsonAssistantData(data){
   // Use collected data to perform some actions!
 
 }
-
-
-/*************************************
- * General functions ©
- * Author: Luca Crippa - luca.crippa88@gmail.com
- * Requires: nothing
- *************************************/
