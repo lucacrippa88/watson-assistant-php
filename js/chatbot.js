@@ -149,4 +149,7 @@ function useWatsonAssistantData(data){
   // SEND PUSH NOTIFICATION -----------------------------------------------
 
 
+  // SEND EMAIL TO SUPPORTA -----------------------------------------------
+
+
 }
