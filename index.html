@@ -42,4 +42,17 @@
   toggleChat();
 </script>
 
+
+<link rel="manifest" href="/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "2fb556c8-dd87-4b38-87eb-ee769aad88b3",
+    });
+  });
+</script>
+
+
 </html>
