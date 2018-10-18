@@ -142,6 +142,7 @@ function useWatsonAssistantData(data){
   // console.log(data);
 
   // Use collected data to perform some actions!
+  
 
   // WRITE TO MYSQL DB ----------------------------------------------------
 
@@ -149,7 +150,7 @@ function useWatsonAssistantData(data){
   // SEND PUSH NOTIFICATION -----------------------------------------------
 
 
-  // SEND EMAIL TO SUPPORTA -----------------------------------------------
+  // SEND EMAIL TO SUPPORT ------------------------------------------------
 
 
 }
