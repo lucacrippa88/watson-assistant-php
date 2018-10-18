@@ -11,7 +11,7 @@ function sendPush(){
 	var post_title = $("#text1").val();
   var post_text = $("#text2").val();
   var post_url = $("#url").val();
-  if( $("#segment:checked").val() ) { var post_segment = "All"; } else { var post_segment = "Test"; }
+  var post_segment = "All";
 
   // Check data posted
   if( (post_title == "")||(post_text == "")||(post_url == "") ){
