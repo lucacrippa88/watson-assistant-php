@@ -6,7 +6,7 @@
  * Status: stable
  */
 function createHead(){
-	var met_sta = ["<meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><meta name='ROBOTS' content='INDEX,FOLLOW'><meta name='GOOGLEBOT' content='ARCHIVE'>"];
+	var met_sta = ["<meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'>"];
 	var css_ico = ["<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>"]; // css per Material Design Icons
   var css_car = ["<link rel='stylesheet' type='text/css' href='css/carbon-components.min.css'/>"]; // css carbon design
   var js_car  = ["<link rel='stylesheet' type='text/css' href='js/carbon-components.min.js'/>"]; // js carbon design
