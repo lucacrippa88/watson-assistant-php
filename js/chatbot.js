@@ -142,12 +142,14 @@ function useWatsonAssistantData(data){
   // console.log(data);
 
   // Use collected data to perform some actions!
-  
+
 
   // WRITE TO MYSQL DB ----------------------------------------------------
 
 
   // SEND PUSH NOTIFICATION -----------------------------------------------
+
+  console.log(data);
 
 
   // SEND EMAIL TO SUPPORT ------------------------------------------------
