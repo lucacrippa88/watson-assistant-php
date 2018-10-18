@@ -9,6 +9,8 @@
 
   if(isset($_POST['message'])){
 
+    // INSERT WATSON ASSISTANT DATA HERE
+
     // ID of Watson Assistant Workspace
     $workspace_id = 'put-watson-assistant-workspace-id-here';
     // Release date of the API version in YYYY-MM-DD format (*)
