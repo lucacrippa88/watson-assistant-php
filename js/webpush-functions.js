@@ -11,7 +11,7 @@ function sendPush(){
 	var post_title = $("#text1").val();
   var post_text = $("#text2").val();
   var post_url = $("#url").val();
-  var post_segment = "All";
+  var post_segment = "All"; // Possibility to select it via WA
 
     $.ajax({
       url: api,
