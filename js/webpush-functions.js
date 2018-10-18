@@ -13,7 +13,6 @@ function sendPush(){
   var post_url = $("#url").val();
   var post_segment = "All";
 
-
     $.ajax({
       url: api,
       type: 'POST',
