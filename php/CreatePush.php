@@ -20,7 +20,7 @@ function sendMessage() {
     $hashes_array = array();
 
     $fields = array(
-        'app_id' => "9632c98e-57ff-4279-a593-b3360dbadcc1",
+        'app_id' => "insert-app-id-here",
         'included_segments' => array($segment),
         'contents' => $content,
         'headings' => $headings,
@@ -33,7 +33,7 @@ function sendMessage() {
     curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Content-Type: application/json; charset=utf-8',
-        'Authorization: Basic ZTk4MDg1ZjUtMjQ2Zi00ZTQyLWE3YTUtMDFiYWVkNzJiZjZl'
+        'Authorization: Basic insert-rest-api-key-here'
     ));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
