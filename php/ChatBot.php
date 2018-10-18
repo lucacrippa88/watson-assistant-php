@@ -12,7 +12,7 @@
     // ID of Watson Assistant Workspace
     $workspace_id = 'put-watson-assistant-workspace-id-here';
     // Release date of the API version in YYYY-MM-DD format (*)
-    $release_date = 'put-watson-assistant-release-date-here';
+    $release_date = '2018-09-20';
     // Username of the service credentials
     $username = 'put-watson-assistant-username-here';
     // Password of the service credentials
