@@ -13,25 +13,6 @@ function sendPush(){
   var post_url = $("#url").val();
   var post_segment = "All";
 
-  // Check data posted
-  if( (post_title == "")||(post_text == "")||(post_url == "") ){
-
-    swal({
-      title: 'Attenzione',
-      html: 'Devi compilare tutti i campi richiesti.<br><br>',
-      type: 'error',
-      showCloseButton: false,
-      showCancelButton: false,
-      showConfirmButton: true,
-      buttonsStyling: false,
-      animation: false,
-      customClass: 'dialog',
-      confirmButtonClass: 'bx--btn bx--btn--sm bx--btn--secondary',
-      confirmButtonText: 'Ok',
-      allowOutsideClick: false // prevent user by clicking outside instead of clickinf "ok"
-    })
-
-  } else {
 
     $.ajax({
       url: api,
