@@ -100,6 +100,7 @@ function getWAData(context){
   // WRITE TO MYSQL DB ----------------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
       // Prepare response with data collected from chatbot context variables
+      var case = "";
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
@@ -108,12 +109,13 @@ function getWAData(context){
       }
       var allcontent_string = JSON.stringify(allcontent.push(context_data));
       // Function to properly use Watson Assistant collected data
-      useWAData(allcontent_string);
+      useWAData(allcontent_string, case);
   }
 
   // SEND PUSH NOTIFICATION -----------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
       // Prepare response with data collected from chatbot context variables
+      var case = "";
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
@@ -122,12 +124,13 @@ function getWAData(context){
       }
       var allcontent_string = JSON.stringify(allcontent.push(context_data));
       // Function to properly use Watson Assistant collected data
-      useWAData(allcontent_string);
+      useWAData(allcontent_string, case);
   }
 
   // SEND EMAIL TO SUPPORT ------------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
       // Prepare response with data collected from chatbot context variables
+      var case = "";
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
@@ -136,7 +139,7 @@ function getWAData(context){
       }
       var allcontent_string = JSON.stringify(allcontent.push(context_data));
       // Function to properly use Watson Assistant collected data
-      useWAData(allcontent_string);
+      useWAData(allcontent_string, case);
   }
 
 }
@@ -150,7 +153,7 @@ function getWAData(context){
  * Requires: getWatsonAssistantData © input
  * Status: to be fully customized
  */
-function useWAData(data){
+function useWAData(data, case){
 
   // Here you can use context variables collected in getWatsonAssistantData ©
   // to perform actions when i.e. write on DB, call IBM Cloud Functions,
@@ -165,14 +168,18 @@ function useWAData(data){
   // Implement some logic to chose between cases
 
   // WRITE TO MYSQL DB ----------------------------------------------------
-
+  if(case == ""){
+      console.log(data);
+  }
 
   // SEND PUSH NOTIFICATION -----------------------------------------------
-
-  console.log(data);
-
+  if(case == ""){
+      console.log(data);
+  }
 
   // SEND EMAIL TO SUPPORT ------------------------------------------------
-
+  if(case == ""){
+      console.log(data);
+  }
 
 }
