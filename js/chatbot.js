@@ -143,6 +143,7 @@ function useWatsonAssistantData(data){
 
   // Use collected data to perform some actions!
 
+  // Implement some logic to chose between cases
 
   // WRITE TO MYSQL DB ----------------------------------------------------
 
