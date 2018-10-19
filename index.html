@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+
+  <!--<link rel="manifest" href="/manifest.json" />-->
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "insert-app-id-here",
+      });
+    });
+  </script>
+
+</head>
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Chatbot with Watson Assistant functions -->
@@ -40,18 +53,6 @@
 
 <script>
   toggleChat();
-</script>
-
-
-<link rel="manifest" href="/manifest.json" />
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "insert-app-id-here",
-    });
-  });
 </script>
 
 
