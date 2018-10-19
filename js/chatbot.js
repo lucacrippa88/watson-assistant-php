@@ -89,7 +89,7 @@ $(function(){
  * Requires: nothing
  * Status: stable - to be customized
  */
-function getWatsonAssistantData(context){
+function getWAData(context){
 
   // Here you can use context variables as defined in Watson Assistant
   // to perform actions when i.e. a variable gets a certain value
@@ -115,7 +115,7 @@ function getWatsonAssistantData(context){
       var allcontent_string = JSON.stringify(allcontent);
 
       // Function to properly use Watson Assistant collected data
-      useWatsonAssistantData(allcontent_string);
+      useWAData(allcontent_string);
 
   }
 
@@ -131,7 +131,7 @@ function getWatsonAssistantData(context){
  * Requires: getWatsonAssistantData © input
  * Status: to be fully customized
  */
-function useWatsonAssistantData(data){
+function useWAData(data){
 
   // Here you can use context variables collected in getWatsonAssistantData ©
   // to perform actions when i.e. write on DB, call IBM Cloud Functions,
