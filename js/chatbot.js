@@ -95,30 +95,49 @@ function getWAData(context){
   // to perform actions when i.e. a variable gets a certain value
 
   context = JSON.parse(context); // get context from chatbot
-  // console.log(context); // check context status
+  var allcontent = [];
 
-  // Conditions: check context variables status to perform actions
+  // WRITE TO MYSQL DB ----------------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
-
       // Prepare response with data collected from chatbot context variables
-      var allcontent = [];
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
         "key3": context.var_name3,
         // etc...
       }
-      allcontent.push(context_data);
-
-      // console.log(allcontent); // check data status
-
-      var allcontent_string = JSON.stringify(allcontent);
-
+      var allcontent_string = JSON.stringify(allcontent.push(context_data));
       // Function to properly use Watson Assistant collected data
       useWAData(allcontent_string);
-
   }
 
+  // SEND PUSH NOTIFICATION -----------------------------------------------
+  if(context.put_variable_name_here == "put-variable-value-here"){
+      // Prepare response with data collected from chatbot context variables
+      var context_data = {
+        "key1": context.var_name1,
+        "key2": context.var_name2,
+        "key3": context.var_name3,
+        // etc...
+      }
+      var allcontent_string = JSON.stringify(allcontent.push(context_data));
+      // Function to properly use Watson Assistant collected data
+      useWAData(allcontent_string);
+  }
+
+  // SEND EMAIL TO SUPPORT ------------------------------------------------
+  if(context.put_variable_name_here == "put-variable-value-here"){
+      // Prepare response with data collected from chatbot context variables
+      var context_data = {
+        "key1": context.var_name1,
+        "key2": context.var_name2,
+        "key3": context.var_name3,
+        // etc...
+      }
+      var allcontent_string = JSON.stringify(allcontent.push(context_data));
+      // Function to properly use Watson Assistant collected data
+      useWAData(allcontent_string);
+  }
 
 }
 
