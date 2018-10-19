@@ -100,7 +100,7 @@ function getWAData(context){
   // WRITE TO MYSQL DB ----------------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
       // Prepare response with data collected from chatbot context variables
-      var case = "";
+      var case = "mysql";
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
@@ -115,7 +115,7 @@ function getWAData(context){
   // SEND PUSH NOTIFICATION -----------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
       // Prepare response with data collected from chatbot context variables
-      var case = "";
+      var case = "push";
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
@@ -130,7 +130,7 @@ function getWAData(context){
   // SEND EMAIL TO SUPPORT ------------------------------------------------
   if(context.put_variable_name_here == "put-variable-value-here"){
       // Prepare response with data collected from chatbot context variables
-      var case = "";
+      var case = "email";
       var context_data = {
         "key1": context.var_name1,
         "key2": context.var_name2,
@@ -159,26 +159,23 @@ function useWAData(data, case){
   // to perform actions when i.e. write on DB, call IBM Cloud Functions,
   // call other code, or anything else.
 
-  // To be customized
   var data = JSON.parse(data); // get context from chatbot
-  // console.log(data);
 
   // Use collected data to perform some actions!
-
   // Implement some logic to chose between cases
 
   // WRITE TO MYSQL DB ----------------------------------------------------
-  if(case == ""){
+  if(case == "mysql"){
       console.log(data);
   }
 
   // SEND PUSH NOTIFICATION -----------------------------------------------
-  if(case == ""){
+  if(case == "push"){
       console.log(data);
   }
 
   // SEND EMAIL TO SUPPORT ------------------------------------------------
-  if(case == ""){
+  if(case == "email"){
       console.log(data);
   }
 
