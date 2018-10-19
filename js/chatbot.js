@@ -47,7 +47,7 @@ var api = "php/ChatBot.php"; // Backend api URl
       // Upodate the conversation context
       context = JSON.stringify(JSON.parse(response).context);
 			// Call function to retrieve conversation context variables
-      getWatsonAssistantData(context);
+      getWAData(context);
     }
   }).fail(function () {
     // Failed (Watson Assistant error): display a error message to ask user to resend message

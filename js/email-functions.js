@@ -36,7 +36,7 @@ $("#submitmessage").click(function() {
 
     $.ajax(
     {
-      url: '/api/SendEmail.php', // retrieve page contents
+      url: '/php/SendEmail.php', // retrieve page contents
       type: 'POST',
       data: data,
       dataType: 'json',
