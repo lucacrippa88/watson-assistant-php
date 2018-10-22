@@ -7,7 +7,7 @@
 
 
 // Main sendmail function
-$("#submitmessage").click(function() {
+function sendEmailWA(data) {
 
   // NEED TO GET CONTEXT FROM WATSON ASSISTANT CHATBOT!
   // Values should be retrieved from context variables
