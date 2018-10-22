@@ -42,19 +42,6 @@ $("#submitmessage").click(function() {
           })
 
         }
-        if(obj.payload == "error"){
-
-          swal({
-            title: 'Errore',
-            html: 'Controlla i dati mancanti.<br><br>',
-            customClass: 'mdl-dialog',
-            buttonsStyling: false,
-            confirmButtonClass: 'mdl-button',
-            confirmButtonText: 'Ok',
-            type: 'error'
-          })
-
-        }
 
       } // end of function
     }); // end of ajax call
