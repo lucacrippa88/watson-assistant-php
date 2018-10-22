@@ -26,7 +26,7 @@ Integrate this code by following the following customization steps:
 
 ## How to improve
 
-Improve the Chatbot with MySQL writing, create push notification, sending emails to support.
+Improve the Chatbot with MySQL writing, create push notification, sending emails to support. These are only general ideas on how to create integration with MySQL, push notifications and email delivery: some coding skills are requested to integrate the solution into your web applications. For more info, please review video tutorials.
 
 Write to MySQL database: use saveDataWA() in mysql-functions.js to create Ajax calls to your DB update APIs. The saveDataWA() functions take input from useWAData() included in chatbot.js.
 
