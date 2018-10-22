@@ -1,19 +1,8 @@
 <?
 // -----------------------------------------------------------------------------
-// Website info
+// Support info
 
-	$SiteName = "...";
-	$SiteWork = "...";
-	$SiteMin = "...";
-  $SiteEmail = "info@...";
 	$ThankYouMessage = "$SiteMin - Messaggio inviato!";
-	// $SiteTel = "Tel (+39) 039. ...";
-	// $SiteFax = "Fax (+39) 039. ...";
-	// $SiteSocial = "#...";
-	// $SiteAddress = "...";
-
-	$secret = "put-here-recaptcha-secret"; // Please have a look here: https://www.google.com/recaptcha/intro/v3beta.html
-
 
 // -----------------------------------------------------------------------------
 // Retrieve contents
@@ -22,27 +11,6 @@
 	$UserSubject = $_POST['UserSubject'];
 	$UserEmail = $_POST['UserEmail'];
 	$UserComments = $_POST['UserComments'];
-	$UserAuth = $_POST['UserAuth'];
-	$response = $_POST["UserCaptcha"];
-
-	$verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
-	$captcha_success = json_decode($verify);
-
-// Send error to contact page
-	if ( ($captcha_success->success==false)||($UserAuth=="false") ) {
-		$array['Sent'] = array('payload' => 'error');
-		echo json_encode($array);
-	}
-
-// Send error to contact page
-	// if ($UserAuth=="false") {
-	// 	$array['Sent'] = array('payload' => 'errorauth');
-	// 	echo json_encode($array);
-	// }
-
-	if ( ($captcha_success->success==true)&&($UserAuth=="true") ) {
-
-    $UserAuth_norm = "sì"; // Authorization from "true" to "sì"
 
 
 // -----------------------------------------------------------------------------
@@ -84,7 +52,5 @@
 
 	//mail($UserEmail, $ThankYouMessage, $UserMessage, $UserHeaders); // confirmation email to user
 	mail("$SiteEmail", "$UserSubj", $AdminMessage, "From: $UserEmail"); // email to admin
-
-}
 
 ?>

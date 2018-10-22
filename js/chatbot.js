@@ -177,6 +177,14 @@ function useWAData(data, case){
   // SEND EMAIL TO SUPPORT ------------------------------------------------
   if(case == "email"){
       console.log(data);
+
+      // Structure of variables to be integrated in SendEmail.php
+      // UserName
+      // UserSubject
+      // UserEmail
+      // UserComments
+
+
   }
 
 }

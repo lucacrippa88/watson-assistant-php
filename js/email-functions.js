@@ -23,16 +23,6 @@ $("#submitmessage").click(function() {
   // Values should be retrieved from context variables
   // To be updated!
 
-  var data = {
-      UserSubject: $("#usersubject").val(),
-      UserName: $("#username").val(),
-      UserEmail: $("#useremail").val(),
-      UserComments: $("#usercomments").val(),
-      UserAuth: $('#userauth').is(":checked"),
-      UserCaptcha: grecaptcha.getResponse()
-  };
-
-   console.log(data);
 
     $.ajax(
     {
