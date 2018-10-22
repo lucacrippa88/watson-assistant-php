@@ -13,7 +13,7 @@ In order to use this code, it's necessary to have:
 4. A PHP application
 
 
-## How to use
+## How to use basic Chatbot features
 
 Integrate this code by following the following customization steps:
 
@@ -22,6 +22,10 @@ Integrate this code by following the following customization steps:
 3. Edit CSS to fit in your web application's graphics
 4. Edit getWatsonAssistantData() in js/chatbot.js with context variable names to be checked in order to perform actions
 5. Edit useWatsonAssistantData() in js/chatbot.js with personal code to perform actions
+
+## How to improve
+
+
 
 
 ## Features
