@@ -23,6 +23,7 @@ Integrate this code by following the following customization steps:
 4. Edit getWatsonAssistantData() in js/chatbot.js with context variable names to be checked in order to perform actions
 5. Edit useWatsonAssistantData() in js/chatbot.js with personal code to perform actions
 
+
 ## How to improve
 
 Improve the Chatbot with MySQL writing, create push notification, sending emails support.
