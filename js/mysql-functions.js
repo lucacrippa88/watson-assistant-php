@@ -1,15 +1,15 @@
 /*************************************
- * Manage post functions Â©
- * Requires: nothing
+ * Watson Assistant to MySQL functions ©
+ * Requires: sweetalert2
  * Author: Luca Crippa - luca.crippa88@gmail.com
  *************************************/
 
 
 /*
- * Function: saveDataWA Â©
- * Returns: lettura e invio dati da pagina di creazione/edit di post verso API per update del DB in stato di post pubblicato
+ * Function: saveDataWA ©
+ * Returns: lettura e invio dati da pagina di creazione/edit di post verso API per update del DB in stato di draft
  * Author: Luca Crippa - luca.crippa88@gmail.com
- * Date: July 2017
+ * Date: October 2018
  */
 function saveDataWA(postdata) {
 
