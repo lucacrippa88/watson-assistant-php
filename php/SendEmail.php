@@ -37,8 +37,6 @@
 	$AdminMessage .= "$UserComments\n";
 	$AdminMessage .= "\n\n";
 	$AdminMessage .= "-------------------------------------------------\n";
-	$AdminMessage .= "Autorizzo al trattamento dei miei dati personali ai sensi degli art. 13-14 del GDPR 2016/679: $UserAuth_norm \n";
-	$AdminMessage .= "-------------------------------------------------\n";
 	$AdminMessage .= "Puoi rispondere al messaggio di $UserName scrivendo all'indirizzo $UserEmail\n\n";
 
 // -----------------------------------------------------------------------------
