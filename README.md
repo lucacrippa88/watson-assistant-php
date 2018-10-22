@@ -26,7 +26,11 @@ Integrate this code by following the following customization steps:
 
 ## How to improve
 
-Improve the Chatbot with MySQL writing, create push notification, sending emails support.
+Improve the Chatbot with MySQL writing, create push notification, sending emails to support.
+
+Write to MySQL database:
+Send push notification: to be updated.
+Send emails: to be updated.
 
 
 
