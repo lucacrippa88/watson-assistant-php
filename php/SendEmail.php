@@ -50,7 +50,6 @@
 // -----------------------------------------------------------------------------
 // Send the emails
 
-	//mail($UserEmail, $ThankYouMessage, $UserMessage, $UserHeaders); // confirmation email to user
 	mail("$SiteEmail", "$UserSubj", $AdminMessage, "From: $UserEmail"); // email to admin
 
 ?>
