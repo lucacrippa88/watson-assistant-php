@@ -1,19 +1,9 @@
 /*************************************
  * Send email functions ©
  * Author: Luca Crippa - luca.crippa88@gmail.com
- * Requires: php/SendEmail.php, chatbot.js and others
+ * Requires: php/SendEmail.php, chatbot.js
  * Status: currently unstable / out of service
  *************************************/
-
-// Set subject as requested
-// Get subject from url
-// Currently out of service
-var subject = getURLParameter("subject");
-$(document).ready(function() {
-  if(subject != null) {
-    $("#usersubject").val(subject);
-  }
-});
 
 
 // Main sendmail function
@@ -23,10 +13,9 @@ $("#submitmessage").click(function() {
   // Values should be retrieved from context variables
   // To be updated!
 
-
     $.ajax(
     {
-      url: '/php/SendEmail.php', // retrieve page contents
+      url: 'php/SendEmail.php', // retrieve page contents
       type: 'POST',
       data: data,
       dataType: 'json',
@@ -62,26 +51,10 @@ $("#submitmessage").click(function() {
             buttonsStyling: false,
             confirmButtonClass: 'mdl-button',
             confirmButtonText: 'Ok',
-            // showCancelButton: true,
-            // cancelButtonClass: 'mdl-button close',
-            // cancelButtonText: 'Annulla',
             type: 'error'
           })
 
         }
-        // if(obj.payload == "errorauth"){
-        //
-        //   swal({
-        //     title: 'Errore',
-        //     html: 'Devi autorizzarmi al trattamento dei tuoi dati personali ai sensi degli art. 13-14 del GDPR 2016/679.<br><br>',
-        //     customClass: 'dialog',
-        //     buttonsStyling: false,
-        //     confirmButtonClass: 'but flat blue-trans right',
-        //     confirmButtonText: 'Ok',
-        //     type: 'error'
-        //   })
-        //
-        // }
 
       } // end of function
     }); // end of ajax call
