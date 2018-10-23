@@ -24,7 +24,7 @@ Integrate this code by following the following customization steps:
 5. Edit useWatsonAssistantData() in js/chatbot.js with personal code to perform actions
 
 
-## How to improve
+## How to improve Chatbot features
 
 Improve the Chatbot with MySQL writing, create push notification, sending emails to support. These are only general ideas on how to create integration with MySQL, push notifications and email delivery: some coding skills are requested to integrate the solution into your web applications. For more info, please review video tutorials.
 
