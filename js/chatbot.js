@@ -184,7 +184,6 @@ function useWAData(data, case){
       // UserEmail
       // UserComments
 
-
   }
 
 }
