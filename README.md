@@ -40,8 +40,7 @@ Please note: your php server needs to be enabled to send emails.
 
 ### Create push notification
 
-You can train the Chatbot to understand when the user is asking to create an email message. The Assistant will start to collect all the needed info, handling a natural conversation with digressions enabled and fluent interactions.
-The Assistant will collect the subject, the text and the recipients, then a confirmation to proceed to send the email.
+TBU
 
 
 ## Features
