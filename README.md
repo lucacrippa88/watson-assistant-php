@@ -32,7 +32,9 @@ Write to MySQL database: use saveDataWA() in mysql-functions.js to create Ajax c
 
 Send push notification: to be updated.
 
-Send emails: to be updated.
+### Send emails
+
+You can train the Chatbot to understand when the user is asking to create an email message.
 
 
 
