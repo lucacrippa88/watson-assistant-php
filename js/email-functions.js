@@ -36,7 +36,7 @@ function sendEmailWA(data) {
             customClass: 'mdl-dialog',
             confirmButtonClass: 'mdl-button',
             confirmButtonText: 'Ok',
-            allowOutsideClick: false // prevent user by clicking outside instead of clickinf "ok"
+            allowOutsideClick: false // prevent user by clicking outside instead of clicking "ok"
           }).then(function () {
             window.location.replace("/") // redirect after clicking "ok"
           })
