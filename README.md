@@ -40,7 +40,7 @@ Please note: your php server needs to be enabled to send emails.
 
 ### Create push notification
 
-TBU
+To be updated.
 
 
 ## Features
