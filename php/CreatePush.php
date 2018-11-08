@@ -20,7 +20,7 @@ function sendMessage() {
     $hashes_array = array();
 
     $fields = array(
-        'app_id' => "insert-app-id-here",
+        'app_id' => "insert-app-id-here", // INSERT APP ID HERE
         'included_segments' => array($segment),
         'contents' => $content,
         'headings' => $headings,
