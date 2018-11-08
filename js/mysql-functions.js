@@ -59,7 +59,6 @@ function saveDataWA(postdata) {
           swal({
             title: 'Contenuto pubblicato!',
             html: 'Watson Assistant ha salvato il post in bozza.<br><br>',
-            // type: 'success',
 						imageUrl: 'img/watson.png',
 						imageWidth: 200,
 						imageHeight: 186,
