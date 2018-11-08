@@ -31,6 +31,7 @@ var api = "php/ChatBot.php"; // Backend api URl
     },
     timeout: 10000 // Wait (ms) to check new message arrival from Watson Assistant
                    // Can be used if a response is needed in a certain time
+                   // After timeout, the answer is in fail() statement
   }).done(function(response) {
     // Check the result
     if(response.error) { // Timed-out (no answer from Watson Assistant): display a error message to ask user to resend message
