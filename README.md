@@ -43,7 +43,7 @@ You can train the Chatbot to understand when the user is asking to create an ema
 The integration of a Chatbot in a PHP web app allows to easily:
 1. Help users to navigate graphic user interface (GUI) by answering to common questions and giving advices
 2. Enables to retrieve data from user in order to perform actions triggered by context variables, such as writing on a DB
-3. Allows to create and send an email i.e. to the support team -> under development!
+3. Allows to create and send an email i.e. to the support team
 4. Allows to create and send a web push notification -> under development! -> OneSignal required! https://onesignal.com/
 
 
