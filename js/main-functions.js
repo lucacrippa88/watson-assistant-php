@@ -17,7 +17,7 @@ function createHead(){
 	$('head').append(headfull);
 }
 
-// ADD SWEETALERT2!!!
+// ADD SWEETALERT2!!! -> https://sweetalert2.github.io
 
 /*
  * Function: toggleChat ©
