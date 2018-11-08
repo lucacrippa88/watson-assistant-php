@@ -34,7 +34,7 @@ Send push notification: to be updated.
 
 ### Send emails
 
-You can train the Chatbot to understand when the user is asking to create an email message.
+You can train the Chatbot to understand when the user is asking to create an email message. The Assistant will start to collect all the needed info, handling a natural conversation with digressions enabled and fluent interactions.
 
 
 
