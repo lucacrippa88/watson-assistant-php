@@ -57,7 +57,7 @@
 @media all and (min-width: 1200px) {
   #virtual-assistant { max-height:450px; overflow:scroll; display:none; background-color:#ffffff; }
   #virtual-assistant-container { position:fixed!important; bottom:50px; padding:0px; right:5%!important; left:70%!important; width:450px; background-color:#ffffff; box-shadow:0 2px 2px 0 rgba(0,0,0,0.15); }
-  #chat-form { position:absolute;bottom:10px;width:85%;background-color:#FFFFFF;display:none }
+  #chat-form { position:absolute; bottom:10px; width:85%;background-color:#FFFFFF;display:none }
   #input-ask { width: 80%; }
 }
 
