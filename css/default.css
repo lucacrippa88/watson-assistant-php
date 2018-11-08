@@ -49,15 +49,15 @@
 .latest { text-align: left; color: #000000; }
 .toggle-assistant { position:fixed;right:5%;bottom:17px;cursor:pointer; }
 #virtual-assistant { max-height:300px; overflow:scroll; display:none; background-color:#f5f7fa; }
-#virtual-assistant-container { background-color:#f5f7fa;position:fixed!important; bottom:40px; padding:5px; right:0%; left:0%; width:100%; box-shadow:0 -1px 5px 1px rgba(0,0,0,0.15); }
-#chat-form { position:absolute;bottom:10px;width:95%;background-color:#f5f7fa;display:none }
+#virtual-assistant-container { background-color:#f5f7fa; position:fixed!important; bottom:40px; padding:5px; right:0%; left:0%; width:100%; box-shadow:0 -1px 5px 1px rgba(0,0,0,0.15); }
+#chat-form { position:absolute; bottom:10px; width:95%; background-color:#f5f7fa;display:none }
 #chat-button { vertical-align: middle; min-width: 20px!important; }
 #input-ask { width: 70%; }
 
 @media all and (min-width: 1200px) {
   #virtual-assistant { max-height:450px; overflow:scroll; display:none; background-color:#ffffff; }
   #virtual-assistant-container { position:fixed!important; bottom:50px; padding:0px; right:5%!important; left:70%!important; width:450px; background-color:#ffffff; box-shadow:0 2px 2px 0 rgba(0,0,0,0.15); }
-  #chat-form { position:absolute; bottom:10px; width:85%;background-color:#FFFFFF;display:none }
+  #chat-form { position:absolute; bottom:10px; width:85%; background-color:#FFFFFF; display:none }
   #input-ask { width: 80%; }
 }
 
