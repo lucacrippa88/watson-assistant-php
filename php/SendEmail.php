@@ -12,7 +12,6 @@
 	$UserEmail = $_POST['UserEmail'];
 	$UserComments = $_POST['UserComments'];
 
-
 // -----------------------------------------------------------------------------
 // Set up admin message
 
@@ -48,6 +47,7 @@
 // -----------------------------------------------------------------------------
 // Send the emails
 
+	// You can set additional requirements, for example a recaptcha
 	mail("$SiteEmail", "$UserSubj", $AdminMessage, "From: $UserEmail"); // email to admin
 
 ?>
