@@ -1,9 +1,7 @@
 /* ---------------------------- BASE GRAPHICS ---------------------------- */
 
 .main-footer {
-  padding-left:5%;
-  z-index:1;
-  background-color:#f5f7fa;
+  padding-left:5%; z-index:1; background-color:#f5f7fa;
   position:fixed; bottom:0px; width:102%; height:60px;
   box-shadow: 0 -1px 5px 1px rgba(0, 0, 0, .14);
 }
