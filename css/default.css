@@ -14,18 +14,10 @@
 
 .material-icons {
   font-family: 'Material Icons';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
+  font-weight: 400; font-style: normal; font-size: 24px; line-height: 1;
+  letter-spacing: normal; text-transform: none; display: inline-block;
+  white-space: nowrap; word-wrap: normal; direction: ltr;
+  -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased;
 }
 
 /* ---------------------------- END BASE GRAPHICS ---------------------------- */
@@ -47,7 +39,7 @@
 .to-watson    { text-align: right; color: #3d70b2; margin: 10px 0px 10px 0px; }
 .from-watson  { text-align: left; color: #bbbbbb; margin: 10px 0px 10px 0px; }
 .latest { text-align: left; color: #000000; }
-.toggle-assistant { position:fixed;right:5%;bottom:17px;cursor:pointer; }
+.toggle-assistant { position:fixed; right:5%; bottom:17px; cursor:pointer; }
 #virtual-assistant { max-height:300px; overflow:scroll; display:none; background-color:#f5f7fa; }
 #virtual-assistant-container { background-color:#f5f7fa; position:fixed!important; bottom:40px; padding:5px; right:0%; left:0%; width:100%; box-shadow:0 -1px 5px 1px rgba(0,0,0,0.15); }
 #chat-form { position:absolute; bottom:10px; width:95%; background-color:#f5f7fa;display:none }
