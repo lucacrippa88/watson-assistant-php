@@ -55,5 +55,4 @@ $array['Response'] = array(
 
 echo json_encode($array); // Returns confirmation
 
-
 ?>
