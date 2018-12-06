@@ -1,6 +1,6 @@
 # Easily integrate a Watson Assistant Chatbot in a PHP web application
 
-This project allows you to easily integrate a responsive banner at the bottom of web page with a button to a chat panel powered by IBM Watson.
+This project allows you to easily integrate a responsive banner at the bottom of web page with a button to a chat panel powered by IBM Watson. The aim of this project is to help developers with a kind of framework to integrate IBM Watson services into PHP web applications, by providing a pre-defined structure based on jQuery, AJAX, cURL and PHP.
 
 
 ## Prerequisites
