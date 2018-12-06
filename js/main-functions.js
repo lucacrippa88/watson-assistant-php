@@ -12,7 +12,7 @@ function createHead(){
   var js_car  = ["<link rel='stylesheet' type='text/css' href='js/carbon-components.min.js'/>"]; // js carbon design
   var css_def = ["<link rel='stylesheet' type='text/css' href='css/default.css'/>"]; // css default (reset)
 	var css_mat = ["<link rel='stylesheet' type='text/css' href='css/material-design.css' media='screen,projection'/>"]; // css per Material Design
-	var title = ["<title>Watson Assistant in PHP</title>"];
+	var title = ["<title>Watson Assistant integration into PHP webapp</title>"];
 	var headfull = met_sta.concat(css_ico, css_car, js_car, css_def, css_mat, title);
 	$('head').append(headfull);
 }
