@@ -62,7 +62,7 @@ Please find my tutorials on how to train Watson Assistant here: link to come (It
 3. Coding del frontend web: https://www.youtube.com/watch?v=CBSPNKs5SMU
 4. Funzionalità: aiuto alla navigazione UI: https://www.youtube.com/watch?v=9D1JpuXlx60&t=3s
 5. Funzionalità: salvataggio dati su MySQL: https://www.youtube.com/watch?v=OMKbOrRxiuc&t=4s
-6. - ... -> more to come!
+6. More to come!
 
 
 ## Notes
